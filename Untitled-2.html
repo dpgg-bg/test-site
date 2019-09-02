@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <style>
+       
+       
+     body {
+            background-color: aqua;
+     }
+
+    h1 {
+        color: blue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    
+    button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        
+    }
+   
+    
+    p1 {
+        
+        color: blue;
+        font-size: 20px;
+        font-family:fantasy;
+    }
+    </style>
+    <body> 
+      <center><h1>This is a header!</h1></center>  
+     <center>
+            <button type="button" onclick="myFunction()">Welcome</button>
+            <button type="button" onclick="myF2()">About</button>
+
+     </center> 
+      <center><p1 id='d'></p1></center>
+      
+    </body>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById('d').innerHTML = 
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+
+            else  {
+                x.style.display = "block";
+            }
+        }
+        
+    </script>
+</html>
